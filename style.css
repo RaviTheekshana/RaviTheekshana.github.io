@@ -1,0 +1,878 @@
+:root{
+    --main: #1E90FF;
+    --bg: #f1e1d2;
+    --black: #000;
+    --white: #fff;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+ 
+ *{
+      font-family: 'Roboto',sans-serif;
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      outline: none; border: none;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: .2s linear;
+  }
+ 
+  html{
+      font-size: 62.5%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      scroll-padding-top: 4rem;
+  }
+ 
+  /* this customizes the scrollbar*/
+  html ::-webkit-scrollbar{
+      width: 1rem;
+  }
+ 
+  html ::-webkit-scrollbar-track{
+      background: transparent;
+  }
+ 
+  html ::-webkit-scrollbar-thumb{
+      background: var(--main);
+      border-radius: 5rem;
+  }
+ 
+  section{
+      padding: 0rem 9%;
+ 
+  }
+ 
+  .heading{
+      text-align: center;
+      font-size: 4rem;
+      color: red;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+      margin-top: revert;
+      padding: 1,2rem 0;
+  }
+ 
+  .btn{
+      font-size: 1.7rem;
+      display: inline-block;
+      background: blue;
+      color: var(--white);
+      box-shadow: var(--box-shadow);
+      border-radius: 5rem;
+      padding: 0.9rem 3rem;
+      margin-top: 1rem;
+      z-index: 0;
+      position: relative;
+      overflow: hidden;
+  }
+ 
+  .btn::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 0%;
+      background: #ff9748;
+      z-index: -1;
+      transition: .3s linear;
+      left: 0;
+ 
+  }
+ 
+  /* header */
+ 
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+/*Top*/
+  *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    background: #000;
+    min-height: 200vh;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 40px;
+    z-index: 10000;
+}
+header.sticky
+{
+    padding: 10px 45px;
+    background: #505050dc;
+}
+header.sticky .logo,
+header.sticky ul li a
+{
+    color: #ffffff;
+    background-color: #001691;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+header ul li a
+{
+    border: 3px solid #002a8d;
+    border-radius: 18px;
+    position: relative;
+    margin: 0 6px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: -1px;
+    font-size: 3em;
+    font-weight: bolder;
+    transition: 0.5s;
+    padding: 4px;
+}
+header ul li a:hover
+{
+   background-color:#000f63;
+   color: rgb(200, 254, 53);
+   font-size: 4em;
+       
+}
+.home{
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: url(Turtle-Friend.webp)no-repeat;
+      background-size: cover;
+      background-position: top;
+  }
+  .home .content{
+      max-width: 60rem;
+  }
+ 
+  .home .content h3{
+      color: rgb(3, 38, 68);
+      font-size: 6rem;
+      line-height: 1.4;
+      font-weight: bolder;
+  }
+ 
+  .home .wave{
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 100%;
+      height: 12rem;
+  }
+/* gap between lines */
+
+ 
+  .banner .row .image{
+      flex: 1 1 41rem;
+      margin-bottom: -14rem;
+  }
+ 
+  .banner .row .image img{
+      width: 100%;
+  }
+   
+
+ 
+  .polution .box-container{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6rem;
+  }
+ 
+  .polution .deco-title{
+      font-size: 10rem;
+      font-weight: 700;
+      white-space: nowrap;
+      line-height: 0.5;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px rgb(204,204,204);
+      transform-origin: top left;
+      transform: rotate(0.25turn);
+      position: absolute;
+      top: 20%;
+      left: 48%;
+      z-index: -1;
+     
+  }
+ 
+  .polution .box-container .image{
+      flex: 1 1 31rem;
+  }
+ 
+  .polution ,.box-container .image img{
+      padding-bottom: 1500px;
+      width: 100%;
+  }
+ 
+  .polution .content{
+      flex: 1 1 41rem;
+  }
+ 
+  .polution .content .title{
+      font-size: 4rem;
+      color: var(--black);
+  }
+ 
+  .polution .content p{
+      font-size: 1.7rem;
+      color: #444;
+      padding: 1rem 0 1rem 2rem;
+      line-height: 2;
+  }
+ 
+  .polution .content ol{
+      font-size: 1.7rem;
+      color: #444;
+      padding: 1rem 0 1rem 2rem;
+      line-height: 2;
+  }
+ 
+  .polution .content .icons-container{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5rem;
+      margin-top: 3rem;
+  }
+ 
+  .polution .content .icons-container .icons{
+      flex: 1 1 16rem;
+      text-align: center;
+      background: var(--bg);
+      padding: 3rem 2rem;
+  }
+ 
+  .polution .content .icons-container .icons .fas{
+      height: 5rem;
+      font-size: 4rem;
+      color: var(--main);
+  }
+ 
+  .polution .content .icons-container .icons h3{
+      padding-top: 1rem;
+      padding-left: 2rem;
+      font-size: 1.5rem;
+      color: #444;
+      font-weight: normal;
+  }
+ 
+ /*about*/
+
+  .about{
+    background-image: url("turtle6.webp");
+    min-height: 100vh;
+    background-position: top;
+    margin-left: -40px;
+    margin-right: -40px;
+
+  }
+ 
+  .about .box-container{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      height: 720px;
+      background-color: tan;
+      margin-left: -40px;
+      margin-right: -40px;
+  }
+ 
+.about .content{
+    display: block;
+    margin-block-start: 12em;
+    margin-block-end: 1em;
+    margin-inline-start: 3px;
+    margin-inline-end: 5px;
+     
+  }
+ 
+  .about .content .title{
+      font-size: 4rem;
+      color: var(--black);
+  }
+ 
+  .about .content p{
+      font-size: 1.7rem;
+      color: #444;
+      padding: 1rem 0 1rem 1rem;
+      line-height: 2;
+  }
+  .about .map{
+      padding-top: 40px;
+      margin-top: 1rem;
+      width: 100%;
+      position: center;
+  }
+  .about .box-container th{
+    position: relative;
+    padding-bottom: 2px;
+    padding-left:60px;
+    padding-right: 30px;
+  }
+.aboutgallery
+{
+    width: 100%;
+    padding: 0rem 2%;
+    background: #444;
+}
+.abouttable
+{
+    display: grid;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #c5c5c5;
+}
+.gallery1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery1 h1{
+    font-size: 5rem;
+}
+.img-box1{
+    width: 120px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(images/TurtlesH1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.8s;
+}
+.img-box1:nth-child(2){
+   background: url(images/TurtlesH4.jpg);
+   background-size: cover;
+   background-position: center;
+}
+.img-box1:nth-child(3){
+    background: url(images/TurtlesH2.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+ .img-box1:nth-child(4){
+    background: url(images/TurtlesH3.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+ .img-box1:nth-child(5){
+    background: url(images/TurtlesH.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+ .img-box1:nth-child(6){
+    background: url(images/turtle5.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+ .img-box1:nth-child(7){
+    background: url(bentota.jpeg);
+    background-size: cover;
+    background-position: center;
+ }
+ .img-box1:hover{
+    width: 600px;
+    cursor: pointer;
+ }
+ .img-box1:hover h3{
+    opacity: 1;
+    font-size: 3rem;
+    font-weight: bolder;
+    bottom: 25px;
+ }
+ 
+ 
+  /* animals*/
+  .animal{
+    background-color: #444;
+    padding-top: 100px;
+    height: 533px;
+  }
+ 
+  .animal .box-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      gap: 2rem;
+  }
+ 
+  .animal .box-container .box{
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+  }
+ 
+  .animal .box-container .box img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+  }
+ 
+  .animal .box-container .box:hover img{
+      transform: scale(1.1);
+  }
+ 
+  .animal .box-container .box .content{
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 0; right: 0;
+      padding: 20px;
+      z-index: 1;
+      transition: 0.5s ease;
+  }
+ 
+  .animal .box-container .box:hover::after{
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--black);
+      opacity: 0.5;
+      transition: 0.5s ease;
+ 
+  }
+ 
+  .animal .box-container .box .content h3{
+      text-align: center;
+      font-size: 3rem;
+      color: var(--white);
+  }
+  .animal .box-container .box p{
+    font-size: 1.5rem;
+    color: white;
+    padding: .5rem 0;
+
+}
+.animal .box-container .box p:hover{
+    font-size: 1.8em;
+    transition: 1s;
+}
+.map
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+  /* end */
+ 
+  /* banner */
+   
+    .banner .row{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5rem;
+    }
+   
+    .banner .row .content{
+      flex:  1 1 39rem;
+      padding-top: 20PX;
+    }
+   
+    .banner .row .content h2{
+      font-size: 3rem;
+      color: var(--main);
+      text-transform: uppercase;
+    }
+   
+    .banner .row .content p{
+      font-size: 1.6rem;
+      color: var(--black);
+      padding: 1rem 0;
+      line-height: 1.8;    
+    }
+    .banner .row .content ol{
+      font-size: 1.6rem;
+      padding: 0 1rem;
+    }
+    .banner .row .content ul{
+      font-size: 1.6rem;
+      padding: 0 1rem;
+    }
+ 
+  /* prices */
+
+  .pricing{
+    background-color: #444444a6;
+    padding-top: 90px;
+    height: 1200px;
+  }
+ 
+  .pricing .box-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      gap: 2rem;
+  }
+ 
+  .pricing .box-container .box{
+      background: rgb(100, 182, 0);
+      padding: 3rem;
+      text-align: center;
+      border-radius: 79% 51% 81% 19% / 58% 93% 7% 42%;
+  }
+ 
+  .pricing .box-container .box:hover{
+      border-radius: 2rem;
+      background-color: rgba(104, 190, 0, 0.858);
+      transition: 0.8s;
+  }
+ 
+  .pricing .box-container .box img{
+      height: 15.5rem;
+      width: 15.5rem;
+      margin-bottom: .5rem;
+      border-radius: 2rem;
+  }
+ 
+  .pricing .box-container .box h3{
+      font-size: 2.6rem;
+      color: var(--black);
+      padding: 1rem 0;
+  }
+ 
+  .pricing .box-container .box .price{
+      font-size: 2.2rem;
+      color: var(--main);
+      padding: -5rem 0;
+  }
+ 
+  .pricing .box-container .box p{
+      font-size: 1.8rem;
+      color: var(--black);
+      padding: .5rem 0;
+  }
+  .pricing .box-container .box p:hover{
+    font-size: 1.8rem;
+    color: white;
+    padding: 2rem 0%;
+    transition: 1s;
+}
+  /* end */
+ 
+  /* footer */
+ 
+  .footer{
+      background-color:wheat;
+      background-size: cover;
+      padding: 3rem 7%;
+  }
+ 
+  .footer .box-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      gap: 1.5rem;
+  }
+ 
+  .footer .box-container .box h3{
+      font-size: 2.5rem;
+      color: #c73d21;
+      padding: 1rem 0;
+  }
+ 
+  .footer .box-container .box .links{
+      display: block;
+      font-size: 1.5rem;
+      color: var(--black);
+      padding: 1rem 0%;
+  }
+ 
+  .footer .box-container .box .links:hover i{
+      padding-right: 2rem;
+  }
+  
+  body {
+      font-family: 'Roboto',
+      sans-serif;
+      margin: 0;
+      background-color: #e7e7e7;
+  }
+  /*Other H*/
+  .pricing1{
+    background: url(images/turtle.gif)no-repeat;
+    padding-top: 90px;
+    height: 880px;
+    background-size: cover;
+    background-position: top;
+  }
+ 
+  .pricing1 .box-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      gap: 2rem;
+  }
+ 
+  .pricing1 .box-container .box{
+      background: rgb(91, 203, 0);
+      padding: 3rem;
+      text-align: center;
+      border-radius: 79% 51% 81% 19% / 58% 93% 7% 42%;
+  }
+  .pricing1 .box-container .box h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.pricing1 .box-container .box p{
+    font-size: 1.8rem;
+    color: var(--black);
+    padding: .5rem 0;
+}
+ 
+.pricing1 .box-container .box:hover{
+      border-radius: 3rem;
+      background-color: rgb(66, 164, 0);
+      font-size: 1.8rem;
+      color: white;
+      transition: 0.8s;
+      
+  }
+ 
+  .pricing1 .box-container .box img{
+      height: 20rem;
+      width: 20rem;
+      margin-bottom: .5rem;
+      border-radius: 2rem;
+  }
+ 
+
+  .pricing1 .box-container .box p:hover{
+    font-size: 1.8rem;
+    color: white;
+    padding: 2rem 0%;
+    transition: 1s;
+}
+.gallery{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery h1{
+    font-size: 5rem;
+}
+.img-box{
+    width: 120px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(images/turtle1.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.8s;
+}
+.img-box:nth-child(2){
+   background: url(images/Turtle2.jpg);
+   background-size: cover;
+   background-position: center;
+}
+.img-box:nth-child(3){
+    background: url(images/turtle3.webp);
+    background-size: cover;
+    background-position: center;
+ }
+ .img-box:nth-child(4){
+    background: url(images/turtle4.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+ .img-box:nth-child(5){
+    background: url(images/turtle5.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+ .img-box:nth-child(6){
+    background: url(images/turtle.jpeg);
+    background-size: cover;
+    background-position: center;
+ }
+ .img-box:nth-child(7){
+    background: url(images/turtle7.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+ .img-box:hover{
+    width: 600px;
+    cursor: pointer;
+ }
+ .img-box:hover h3{
+    opacity: 1;
+    font-size: 3rem;
+    font-weight: bolder;
+    bottom: 25px;
+ }
+.purchase
+{
+    color: #92ff4e;
+    font-size: 30px;
+    font-weight: 400;
+    background-color: #444;
+    padding-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+ .purchase label {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  .upcoming-events
+  {
+    padding-top: 150px;
+    background-color: #444;
+    display: grid;
+    float: right;
+  }
+.upcoming-events h2
+{
+    color: #ffd634;
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.upcoming-events ul li
+{
+    color: #a8a8a8;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.donate{
+    padding-top: 150px;
+    background-color: #444;
+}
+.donate h2
+{
+    color: #fff94e;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.donate label
+{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+  input[type="submit"] {
+    background-color: #4e87c8;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    color: #000;
+    background-color: #5dff27;
+  }
+  
+  input[type="number"] {
+    width: 200px;
+    height: 20px;
+  }
+  .turtle-gallery h2
+  {
+    padding-top: 3rem;
+    font-size: 50px;
+    font-weight: 600;
+    align-items: center;
+  }
+  
+  ul {
+    font-size: 12px;
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+
+  #turtle-gallery img {
+    width: 300px;
+    height: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #donation-types,
+  #merchandise {
+    background-color: #444;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #donation-types h2,
+  #merchandise h2 {
+    color: #f4ff7d;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  #donation-types ul,
+  #merchandise ul {
+    color: #9b9b9b;
+    list-style-type: square;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  /*Table*/
+  .tcat{
+    background-color: #a8a8a8;
+    padding: 1rem 1%;
+  }
+  .tcat table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+  }
+
+  .tcat th, td {
+    padding: 5px;
+    text-align: center;
+    border: 3px solid #404040;
+  }
+  .tcat td{
+    font-size: 20px;
+  }
+
+  .tcat th {
+    font-size: 30px;
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  .tcat tfoot th {
+    background-color: #007bff;
+    color: #fff;
+  }
+  .footernew{
+    font-size: medium;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
