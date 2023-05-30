@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(images/kosgodabg.jpg);
+}
+header
+{
+    font-size: 70%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 40px;
+    z-index: 10000;
+}
+header.sticky
+{
+    padding: 10px 45px;
+    background: #505050dc;
+}
+header.sticky .logo,
+header.sticky ul li a
+{
+    color: #ffffff;
+    background-color: #001691;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+header ul li a
+{
+    border: 3px solid #002a8d;
+    border-radius: 18px;
+    position: relative;
+    margin: 0 6px;
+    text-decoration: none;
+    background-color: #333333;
+    color: #c9ff19;
+    letter-spacing: -1px;
+    font-size: 3em;
+    font-weight: bolder;
+    transition: 0.5s;
+    padding: 4px;
+}
+header ul li a:hover
+{
+   background-color:#000f63;
+   color: rgb(211, 255, 67);
+   font-size: 4em;
+       
+}
+
+/* Main Styles */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 6rem;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-basis: 500px;
+}
+
+section h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 20px;
+    font-weight: 300;
+}
+#species ul{
+    list-style-type:square;
+    margin-left: 25px;
+    padding-bottom: 20px;
+}
+#species ul li{
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: 500;
+}
+section ul li .img {
+    float: right;
+    margin-left: 10px;
+    width: 300px;
+    height: 300px;
+    animation: spin 2s infinite linear;
+}
+@keyframes spi {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#species a{
+    font-size: 25px;
+    font-weight: 400;
+    background-color: #006eff;
+    color: rgb(255, 255, 255);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+}
+  
+#species a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 90, 44);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #232323;
+    color: #aeff0d;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Section-specific Styles */
+#about {
+    background-color: #f7b4a9;
+    animation: fadeIn 2s;
+}
+
+#species {
+    background-color: #edd81b;
+    animation: slideInLeft 2s;
+}
+#conservation{
+    background-color: #43da43;
+    animation: slideInLeft 3s; 
+}
+#about .img{
+    width: 650px;
+    height: auto;
+}
+#species .img{
+    width: 550px;
+}
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 90%;
+        padding: 0px;
+        overflow: scroll;
+    }
+
+    header ul li a {
+        font-size: 2em;
+        padding: 0px;
+        border: none;
+        border-radius: none;
+    }
+
+    main {
+        display: contents;
+        position:relative;
+        justify-content: center;
+        padding: 0px;
+        padding-top: 5rem;
+    }
+    
+    section {
+        background-color: #fff;
+        width:fit-content;
+        padding: 20px;
+        margin: 25px;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        flex-basis: 500px;
+    }
+
+    #species ul {
+        margin-left: 10px;
+    }
+
+    #species a {
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
+    #about .img {
+        width: 800px;
+    }
+
+    #species .img {
+        width: 800px;
+        height: auto;
+    }
+}
+
+  
