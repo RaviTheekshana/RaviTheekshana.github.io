@@ -142,10 +142,10 @@ header ul li a
     text-decoration: none;
     color: #000;
     letter-spacing: -1px;
-    font-size: 3em;
-    font-weight: bolder;
+    font-size: 33px;
+    font-weight: 700;
     transition: 0.5s;
-    padding: 4px;
+    padding: 3px;
 }
 header ul li a:hover
 {
